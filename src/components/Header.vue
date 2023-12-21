@@ -19,10 +19,12 @@ export default {
 
 <template>
     <header>
+        <a href="#" class="prev">Prev</a>
         <HeaderNav></HeaderNav>
         <div class="container">
             <img src="../../public/img/h3-rev-img-6.png" alt="">
         </div>
+        <a href="#" class="next">Next</a>
 
     </header>
     <div>
@@ -50,5 +52,41 @@ header {
 img {
     max-height: 450px;
     max-width: 350px;
+}
+
+.prev,
+.next {
+    position: absolute;
+    top: 20%;
+    transform: translateY(-50%);
+    padding: 20px 17px;
+    background-color: #ccc;
+    background-color: white;
+    text-decoration: none;
+    color: #da684d;
+    border-radius: 22px;
+
+
+
+}
+
+.prev {
+    left: 0;
+    writing-mode: vertical-lr;
+    /* Questa proprietà imposta la scrittura in verticale */
+    text-orientation: mixed;
+    /* Orientamento del testo */
+    transform: rotate(0deg);
+    left: -1%;
+}
+
+.next {
+    right: 0;
+    writing-mode: vertical-lr;
+    /* Questa proprietà imposta la scrittura in verticale */
+    text-orientation: mixed;
+    /* Orientamento del testo */
+    transform: rotate(180deg);
+    right: -1%;
 }
 </style>
