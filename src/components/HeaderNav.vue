@@ -11,7 +11,7 @@ export default {
                 { text: 'Event' },
                 { text: 'Blog' },
                 { text: 'Landing' },
-                { text: 'Cart' },
+                { icon: '/svg/svg-1.svg', text: 'Cart' },
                 { text: 'Search' },
             ],
         };
@@ -46,8 +46,9 @@ export default {
 .header-container {
     display: flex;
     justify-content: center;
+    align-items: center;
     padding: 10px;
-    background-color: black;
+
 }
 
 img {
