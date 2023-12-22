@@ -35,7 +35,7 @@ export default {
 <style scoped>
 header {
     background-color: #1b1b1b;
-    max-width: 125rem;
+    max-width: 100%;
     max-height: 43.75rem;
     background-image: url('../../public/img/h3-rev-img-5.png');
     background-size: contain;
